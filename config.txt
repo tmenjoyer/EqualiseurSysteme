@@ -1,0 +1,28 @@
+# ============================================================
+#  Configuration de l'Egaliseur Systeme
+#  Modifie ce fichier et enregistre : l'EQ se recharge en direct
+#  (pas besoin de relancer le programme), comme dans Equalizer APO.
+# ============================================================
+
+# Lance le programme avec --list pour voir les index des peripheriques,
+# puis renseigne-les ici :
+#   InputDevice  = le cable audio virtuel (ex: "CABLE Output (VB-Audio)")
+#   OutputDevice = tes vrais haut-parleurs / casque
+InputDevice=0
+OutputDevice=1
+
+# Preamp global en dB (baisse-le si le son sature apres avoir monte des bandes)
+PreampDB=0.0
+
+# Bandes de l'egaliseur : Frequence(Hz)  Gain(dB)  Q
+# Q ~1.4 = bande assez large (type egaliseur graphique 10 bandes)
+Band=31     0.0   1.4
+Band=62     0.0   1.4
+Band=125    0.0   1.4
+Band=250    0.0   1.4
+Band=500    0.0   1.4
+Band=1000   0.0   1.4
+Band=2000   0.0   1.4
+Band=4000   0.0   1.4
+Band=8000   0.0   1.4
+Band=16000  0.0   1.4
